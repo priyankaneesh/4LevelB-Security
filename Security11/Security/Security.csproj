@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{700BA963-57DF-450D-9165-7123ABAA559C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Security</RootNamespace>
+    <AssemblyName>Security</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Emgu.CV">
+      <HintPath>..\..\..\..\..\..\..\Refer Notes\Refer Projects\FaceRecProOV\bin\Debug\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI">
+      <HintPath>..\..\..\..\..\..\..\Refer Notes\Refer Projects\FaceRecProOV\bin\Debug\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util">
+      <HintPath>..\..\..\..\..\..\..\Refer Notes\Refer Projects\FaceRecProOV\bin\Debug\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="InTheHand.Net.Personal">
+      <HintPath>..\..\..\..\RVS\Chindhu\Bluetooth\bin\Debug\InTheHand.Net.Personal.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\..\..\RVS\Chindhu\Bluetooth\bin\Debug\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebCam_Capture">
+      <HintPath>..\..\DLLforAddReference\WebCam_Capture.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CaptureImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaptureImage.Designer.cs">
+      <DependentUpon>CaptureImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Checking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Checking.Designer.cs">
+      <DependentUpon>Checking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Login1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login1.Designer.cs">
+      <DependentUpon>Login1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login2.Designer.cs">
+      <DependentUpon>Login2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login3.Designer.cs">
+      <DependentUpon>Login3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login4.Designer.cs">
+      <DependentUpon>Login4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pswd1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pswd1.Designer.cs">
+      <DependentUpon>Pswd1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pswd2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pswd2.Designer.cs">
+      <DependentUpon>Pswd2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pswd3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pswd3.Designer.cs">
+      <DependentUpon>Pswd3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPswd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPswd.Designer.cs">
+      <DependentUpon>ResetPswd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewImage.Designer.cs">
+      <DependentUpon>ViewImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebCam.cs" />
+    <EmbeddedResource Include="CaptureImage.resx">
+      <DependentUpon>CaptureImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Checking.resx">
+      <DependentUpon>Checking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login1.resx">
+      <DependentUpon>Login1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login2.resx">
+      <DependentUpon>Login2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login3.resx">
+      <DependentUpon>Login3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login4.resx">
+      <DependentUpon>Login4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Pswd1.resx">
+      <DependentUpon>Pswd1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pswd2.resx">
+      <DependentUpon>Pswd2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pswd3.resx">
+      <DependentUpon>Pswd3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetPswd.resx">
+      <DependentUpon>ResetPswd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewImage.resx">
+      <DependentUpon>ViewImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_266902.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bluetooth-Security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1018-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reset1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reset2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reset11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resetf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+    <Folder Include="LogUsers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\585e4831cb11b227491c338e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loguser2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loguserrr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluetooth-security-risk-670x335.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluetooth2 copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bOriginal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbb1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbb2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-user-icon-43788.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35507746-registration-illustration-with-tablet-computer-on-blue-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laptop-notebook-coffee-mobile-phone-top-view-old-wood-plank-background-have-space-79803223.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register-now-button_b_smaller_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register-now-button_b_smaller_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cursor-click-round-icons-circle-set-cursor-click-round-icons-circle-set-isolated-white-background-123171991.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DEMO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expecting Mouse Click.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expecting Mouse Click1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_6_6985518820.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouse-arrow-icon-transparent_25642.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\985926720-1024x1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cursor-click-round-icons-set-color-vector-cursor-click-round-icon-simple-illustration-cursor-click-round-vector-icons-set-color-117772777.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cursor-click-round-icons-set-color-vector-cursor-click-round-icon-simple-illustration-cursor-click-round-vector-icons-set-color-1177727771.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cursor-click-round-icons-circle-set-cursor-click-round-icons-circle-set-isolated-white-background-1231719911.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laptop-notebook-coffee-mobile-phone-top-view-old-wood-plank-background-have-space-798032231.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_register-now1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_register-now %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_register-now %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_register-now %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_registration-on-process.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_registration-on-process %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %285%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CUTTING.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CUTTING copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BACK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5adc9090d5c315b8970ba734_BlueTooth emitiendo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GD1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GD2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_spin_lg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pswd33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_loging %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_loging %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_loging %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\source.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_previous-loggers-list %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41-t+6tXOSL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %288%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_0593 %281%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2810%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thumbs_up_emoji.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
